@@ -20,6 +20,7 @@ syntax on
 colorscheme desert
 " Config for vim72
 if v:version >= 702
+set   nocp
 set   autoindent
 set   autoread
 set   autowrite
@@ -29,7 +30,7 @@ set   nobackup
 set   cindent
 set   cinoptions=:0
 set   completeopt=longest,menuone
-"set   cursorline
+set   cursorline
 set   encoding=utf-8
 set   noexpandtab
 set   fileencodings=utf-8,gb2312,gbk,gb18030,chinese
@@ -40,14 +41,14 @@ set   helpheight=10
 set   helplang=cn
 set   hidden
 set   history=100
-"set   hlsearch
+set   hlsearch
 set   ignorecase
 set   incsearch
 set   laststatus=2
-"set   mouse=a
+set   mouse=a
 set   mouse=v
 set   number
-"set   paste
+set   paste
 set   pumheight=10
 set   ruler
 set   scrolloff=5
@@ -58,7 +59,7 @@ set   smartcase
 set   tabstop=8
 set   termencoding=utf-8
 "set   textwidth=80
-set   whichwrap=h,l
+set   whichwrap=h,l,b,<,>,[,]
 set   wildignore=*.bak,*.o,*.e,*~
 set   wildmenu
 set   wildmode=list:longest,full
