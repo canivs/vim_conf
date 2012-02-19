@@ -17,7 +17,7 @@ filetype plugin indent on
 " Syntax highlighting.
 syntax on
 " Setting colorscheme
-colorscheme desert
+color evening
 " Config for vim72
 if v:version >= 702
 set   nocp
@@ -56,14 +56,13 @@ set   shiftwidth=8
 set   showcmd
 set   smartindent
 set   smartcase
-set   tabstop=8
+set   tabstop=4
 set   termencoding=utf-8
-"set   textwidth=80
+set   textwidth=80
 set   whichwrap=h,l,b,<,>,[,]
 set   wildignore=*.bak,*.o,*.e,*~
 set   wildmenu
 set   wildmode=list:longest,full
-"set nowrap
 endif
 " Config for vim73
 if v:version >= 703
@@ -82,7 +81,7 @@ source $VIMRUNTIME/menu.vim
 language messages zh_CN.utf-8
 endif
 
-" Customiaze settings
+" Customize settings
 "hi cMathOperator	cterm=none ctermfg=6
 " show unexpected white spaces, and disable display while typing
 hi ExtraWhitespace	ctermbg=red guibg=red
@@ -208,8 +207,8 @@ autocmd BufReadPost *
 " Set mapleader
 let mapleader=","
 " Space to command mode.
-"nnoremap <space> :
-"vnoremap <space> :
+nnoremap <space> :
+vnoremap <space> :
 " Switching between buffers.
 nnoremap <C-h> <C-W>h
 nnoremap <C-j> <C-W>j
