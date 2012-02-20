@@ -32,7 +32,7 @@ set   cinoptions=:0
 set   completeopt=longest,menuone
 set   cursorline
 set   encoding=utf-8
-set   noexpandtab
+set   expandtab
 set   fileencodings=utf-8,gb2312,gbk,gb18030,chinese
 set   fileformat=unix
 set   foldenable
@@ -52,7 +52,7 @@ set   paste
 set   pumheight=10
 set   ruler
 set   scrolloff=5
-set   shiftwidth=8
+set   shiftwidth=4
 set   showcmd
 set   smartindent
 set   smartcase
@@ -196,7 +196,7 @@ let g:vimwiki_list = [{'path_html': '~/vimwiki/vimwiki_html/',}]
 
 " AUTO COMMANDS: {{{1
 " auto expand tab to blanks
-autocmd FileType c,cpp set noexpandtab
+" autocmd FileType c,cpp set noexpandtab
 " Restore the last quit position when open file.
 autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
